@@ -1,0 +1,139 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: url('https://source.unsplash.com/1600x900/?bicycle,city') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 1rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header .container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-btn {
+    background: #FF6F61;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #e55b4f;
+}
+
+/* Sección de beneficios */
+#beneficios {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#beneficios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    background: #e1f5fe;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* Sección de rutas */
+#rutas {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #f3e5f5;
+}
+
+.map iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.map iframe:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    background: #FF6F61;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
